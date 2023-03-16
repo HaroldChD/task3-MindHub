@@ -281,9 +281,14 @@ h3{
     margin-top: 12rem;
 }
 
-ol, ul{
+ul{
+    list-style-type: lower-latin;
     list-style: inside;
-    list-style-type: lower-alpha;
+}
+
+ol{
+    list-style-type: lower-roman;
+    list-style: inside;
 }
 
 .main-5{
