@@ -1,4 +1,5 @@
 :root{
+
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
 }
@@ -252,16 +253,25 @@ caption{
 
 /* Listas */
 
+h3{
+    font-size: 1.2rem;
+}
+
+.main-5{
+    display: flex  ;
+    width: 70%;
+    height: 65rem;
+    justify-content: center;
+}
+
+
 .img5{
     background: linear-gradient(145deg, #343236, #2c2a2d);
     box-shadow:  8px 8px 16px #29272b,
             -8px -8px 16px #3b393d;
     width: 30rem;
-    margin-top: 2rem;
-}
+    height: 5;
 
-h3{
-    font-size: 1.2rem;
 }
 
 .listas{
@@ -269,35 +279,106 @@ h3{
     flex-direction: row;
 }
 
-.listas-0{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.center-list{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;   
 }
 
-.listas-2{
-    margin-top: 12rem;
+.listas-0{
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }
 
-ul{
+/* .listas-2{
+    margin-top: 12rem;
+} */
+
+.listas-1{
     list-style-type: lower-latin;
     list-style: inside;
 }
 
-ol{
+.listas-2{
     list-style-type: lower-roman;
     list-style: inside;
 }
 
-.main-5{
-    width: 100%;
-    margin-top: 3rem;
+/* Formulario */
+form{
+    border: linear-gradient(145deg, #343236, #2c2a2d);
+    box-shadow:  8px 8px 16px #29272b,
+            -8px -8px 16px #3b393d;
+    height: 25vw;
+}
+
+.info-1{
+    
+    background-color: rgba(255, 187, 0, 0.534);
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 10vw;
+}
+
+/* Form imagenes*/
+
+.img6{
+    background: linear-gradient(145deg, #343236, #2c2a2d);
+    box-shadow:  8px 8px 16px #29272b,
+            -8px -8px 16px #3b393d;
+    width: 30rem;
+    height: 5;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form1{
+    display: flex;
     align-content: center;
 }
 
+.inverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
 
+/* Form sent */
+
+.return{
+    margin-top: 1rem;
+    display: flex;
+    justify-content:center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: .2rem;
+        flex-wrap: wrap;
+    }
+    #active { 
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        
+    }
+}

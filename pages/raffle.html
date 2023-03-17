@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a class="header" href="../index.html">Home</a>
+            <a class="header" href="../pages/about.html">About</a>
+            <a class="header" href="../pages/contact.html">Contact</a>
+            <a class="header" href="../pages/schedule.html">Schedule</a>
+            <a class="header" href="../pages/benefits.html">Benefits</a>
+            <a class="header" href="#">Raffle</a>
+        </div>
+        <img class="logo" src="../images/logo.png" alt="">
+    </nav>
+
+    <header class="title">
+        <div>
+            <h1>Benefits and Tips</h1>
+        </div>
+        <h3>Some benefits and tips of physical activity</h3>
+    </header>
+
+    <div class="form1">
+        <div class="img6">
+            <img src="../images/gym-1.jpg" alt="">
+            <img src="../images/guys.jpg" alt="">
+        </div>
+        <div>
+            <form action="./show_data.html" method="get">
+                <fieldset class="info-1">
+                    <legend></legend>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="FirstName">
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="LastName">
+
+                    <label for="e-mail">Email</label>
+                    <input type="text" id="e-mail" name="Email">
+
+
+                    <label for="gender">Chooose your gender</label>
+                        <select name="Gender" id="gender">
+                            <option>--Choose--</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    
+                    <label for="country">Country</label>
+                        <select name="Country" id="country">
+                            <option>--Choose--</option>
+                            <option>Argentina</option>
+                            <option>Peru</option>
+                        </select>
+
+                    <label for="payment">Payment Options</label>
+
+                    <label for="cash">Cash</label>
+                        <input type="radio" name="Cash" id="cash" value="c">
+        
+                            <label for="credit-card">Credit Card</label>
+                            <input type="radio" name="CreditCard" id="credit-card" value="cc">
+        
+                            <label for="debit-card">Debit Card</label>
+                            <input type="radio" name="DebitCard" id="debit-card" value="dc">
+
+                            <label for="e-mail">Email</label>
+                    <input type="text" id="e-mail" name="Email">
+                </fieldset>
+
+                <!-- check accept terms -->
+                <fieldset class="inverse">
+                    <legend></legend>
+                    <label for="Accept Terms">I accept terms and conditions...</label>
+                    <input type="checkbox" name="accept-terms" id="Accept Terms" value="at">
+                </fieldset>
+                <!-- send form -->
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.329051652319!2d-58.446671884175714!3d-34.570539663251516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c6b59d95a3%3A0x9941aeb5a5aae3f2!2sMcDonald's!5e0!3m2!1ses!2sar!4v1678910221417!5m2!1ses!2sar"
+            width="200" height="150" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </footer>
+</body>
+
+</html>
